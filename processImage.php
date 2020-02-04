@@ -70,6 +70,11 @@
                     echo "<p class='error'>InvalidFile : File is not an image.<br /></p>";
                     $uploadOk = false;
                 }
+
+                if (file_exists($targetFile)) {
+                    echo "<p class='error'>Sorry, file already exists.<br /></p>";
+                    $uploadOk = false;
+                }
             } else {
                 echo "<p class='error'>No file submitted<br /></p>";
             }
