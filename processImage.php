@@ -50,8 +50,8 @@
         use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
         use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
+        // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        // $dotenv->load();
 
         processFileUpload();
 
@@ -68,11 +68,6 @@
                     $uploadOk = true;
                 } else {
                     echo "<p class='error'>InvalidFile : File is not an image.<br /></p>";
-                    $uploadOk = false;
-                }
-
-                if (file_exists($targetFile)) {
-                    echo "<p class='error'>Sorry, file already exists.<br /></p>";
                     $uploadOk = false;
                 }
             } else {
