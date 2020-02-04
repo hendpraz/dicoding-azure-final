@@ -50,8 +50,8 @@
         use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
         use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
+        // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        // $dotenv->load();
 
         processFileUpload();
 
