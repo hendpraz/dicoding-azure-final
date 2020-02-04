@@ -1,0 +1,9 @@
+{
+  "name": "hendpraz/dicoding-azure-final",
+  "description": "Final submission for MACD dicoding class",
+  "require": {
+    "php": ">=7.2.0",
+    "microsoft/azure-storage-blob": "~1.0",
+    "vlucas/phpdotenv": "^4.1"
+  }
+}
